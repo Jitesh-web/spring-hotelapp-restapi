@@ -32,6 +32,8 @@ public class HotelController {
 		return ResponseEntity.ok().headers(headers).body(newHotel);
 	};
 	
+	
+	//This a endpoint for updating hotel
 	@PutMapping("/hotels")
 	public ResponseEntity<String> updateHotel(@RequestBody Hotel hotel) {
 		hotelService.updateHotel(hotel);
