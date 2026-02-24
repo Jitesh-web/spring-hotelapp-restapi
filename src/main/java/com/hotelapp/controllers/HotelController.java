@@ -23,6 +23,7 @@ public class HotelController {
 	@Autowired
 	private HotelService hotelService;
 	
+	//This is a rest endpoint to create new hotel
 	@PostMapping("/hotels")
 	public ResponseEntity<Hotel> addHotel(@RequestBody Hotel hotel) {
 		Hotel newHotel = hotelService.addHotel(hotel);
